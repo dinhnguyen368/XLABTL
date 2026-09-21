@@ -1,0 +1,23 @@
+2026-09-21 01:37:49,908 - INFO - === E4: CONTROLLED GAUSSIAN ROBUSTNESS STRESS TEST ===
+2026-09-21 01:37:50,916 - INFO - Baseline first tested sigma below threshold: 0
+2026-09-21 01:37:50,916 - INFO - Proposed first tested sigma below threshold: 0
+2026-09-21 01:37:50,916 - INFO - Joint first tested sigma below threshold: 0
+2026-09-21 01:37:50,916 - INFO - E4 completed successfully.
+2026-09-21 01:38:14,698 - INFO - === E4: CONTROLLED GAUSSIAN ROBUSTNESS STRESS TEST ===
+2026-09-21 01:38:15,417 - INFO - Baseline first tested sigma below threshold: 0
+2026-09-21 01:38:15,417 - INFO - Proposed first tested sigma below threshold: 0
+2026-09-21 01:38:15,427 - INFO - Joint first tested sigma below threshold: 0
+2026-09-21 01:38:15,427 - INFO - E4 completed successfully.
+2026-09-21 01:59:28,303 - INFO - === E4: CONTROLLED GAUSSIAN ROBUSTNESS STRESS TEST ===
+2026-09-21 01:59:28,964 - INFO - Baseline first tested sigma below threshold: 0
+2026-09-21 01:59:28,964 - INFO - Proposed first tested sigma below threshold: 0
+2026-09-21 01:59:28,964 - INFO - Joint first tested sigma below threshold: 0
+2026-09-21 01:59:28,964 - INFO - E4 completed successfully.
+2026-09-21 02:02:58,421 - INFO - === E4: CONTROLLED GAUSSIAN ROBUSTNESS STRESS TEST ===
+2026-09-21 02:02:59,143 - INFO - Baseline clean F1 = 0.210537
+2026-09-21 02:02:59,147 - INFO - Proposed clean F1 = 0.227889
+2026-09-21 02:02:59,148 - INFO - Retention criterion = 50.00%
+2026-09-21 02:02:59,154 - INFO - Baseline first tested sigma below threshold: 10
+2026-09-21 02:02:59,154 - INFO - Proposed first tested sigma below threshold: 50
+2026-09-21 02:02:59,154 - INFO - Joint first tested sigma below threshold: 50
+2026-09-21 02:02:59,154 - INFO - E4 completed successfully.

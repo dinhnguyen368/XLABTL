@@ -1,0 +1,46 @@
+project:
+  name: "Improving Edge Detection via Noise-Proxy-Adaptive Denoising"
+  random_seed: 42
+
+paths:
+  data_dir: "data"
+  metadata_csv: "data/metadata.csv"
+  results_dir: "outputs"
+  logs_dir: "outputs/logs"
+  tables_dir: "outputs/tables"
+  figures_dir: "outputs/figures"
+  intermediate_dir: "outputs/intermediate"
+  configs_dir: "outputs/configs"
+
+baseline:
+  canny_threshold1: 30
+  canny_threshold2: 90
+
+proposed_default:
+  bilateral_d: 5
+  bilateral_sigma_color: 50
+  bilateral_sigma_space: 50
+  canny_threshold1: 30
+  canny_threshold2: 90
+
+evaluation:
+  metric_tolerance: 2
+  failure_threshold_f1: 0.40
+  failure_retention_ratio: 0.50
+
+parameter_search:
+  bilateral_d: [3, 5, 7]
+  bilateral_sigma_color: [25, 50, 75, 100]
+  bilateral_sigma_space: [25, 50, 75]
+
+  # Operational noise-proxy thresholds.
+  # These are used only to assign DEV/EVAL samples
+  # into low / medium / high noise bins.
+  noise_thresholds:
+    t1: 0.65
+    t2: 1.00
+
+noise_levels:
+  light: "light"
+  medium: "medium"
+  heavy: "heavy"

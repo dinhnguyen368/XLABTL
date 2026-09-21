@@ -1,0 +1,24 @@
+{
+    "thresholds": {
+        "t1": 0.65,
+        "t2": 1.0
+    },
+    "low_noise": {
+        "d": 3,
+        "sigma_color": 25.0,
+        "sigma_space": 75.0,
+        "dev_strict_f1": 0.18122135533271852
+    },
+    "medium_noise": {
+        "d": 7,
+        "sigma_color": 75.0,
+        "sigma_space": 50.0,
+        "dev_strict_f1": 0.19604200589067636
+    },
+    "high_noise": {
+        "d": 7,
+        "sigma_color": 75.0,
+        "sigma_space": 25.0,
+        "dev_strict_f1": 0.16581607193433473
+    }
+}

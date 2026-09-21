@@ -1,0 +1,8 @@
+2026-09-21 01:37:11,197 - INFO - === E1: PAIRED CHALLENGE EVIDENCE ===
+2026-09-21 01:37:11,423 - INFO - Positive delta = F1( Light ) - F1( heavier level ) > 0, indicating degradation.
+2026-09-21 01:37:11,423 - INFO - Negative delta indicates higher F1 at the heavier level and must be reported as observed.
+2026-09-21 01:37:11,426 - INFO - E1 completed successfully.
+2026-09-21 01:58:21,744 - INFO - === E1: PAIRED CHALLENGE EVIDENCE ===
+2026-09-21 01:58:21,928 - INFO - Positive delta = F1( Light ) - F1( heavier level ) > 0, indicating degradation.
+2026-09-21 01:58:21,931 - INFO - Negative delta indicates higher F1 at the heavier level and must be reported as observed.
+2026-09-21 01:58:21,931 - INFO - E1 completed successfully.

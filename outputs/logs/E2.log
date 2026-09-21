@@ -1,0 +1,10 @@
+2026-09-21 01:37:24,779 - INFO - === E2: NOISE-PROXY ADAPTIVE PARAMETER SELECTION (DEV ONLY) ===
+2026-09-21 01:37:24,782 - INFO - Searching low_noise: N=7, range=0.4537-0.6433
+2026-09-21 01:37:26,581 - INFO - Searching medium_noise: N=3, range=0.6972-0.7481
+2026-09-21 01:37:27,438 - INFO - Searching high_noise: N=5, range=1.1059-1.3241
+2026-09-21 01:37:28,425 - INFO - E2 completed. Frozen noise-adaptive rules saved at outputs\configs\e2_adaptive_rules.json
+2026-09-21 01:59:05,021 - INFO - === E2: NOISE-PROXY ADAPTIVE PARAMETER SELECTION (DEV ONLY) ===
+2026-09-21 01:59:05,033 - INFO - Searching low_noise: N=7, range=0.4537-0.6433
+2026-09-21 01:59:06,366 - INFO - Searching medium_noise: N=3, range=0.6972-0.7481
+2026-09-21 01:59:07,164 - INFO - Searching high_noise: N=5, range=1.1059-1.3241
+2026-09-21 01:59:08,051 - INFO - E2 completed. Frozen noise-adaptive rules saved at outputs\configs\e2_adaptive_rules.json
