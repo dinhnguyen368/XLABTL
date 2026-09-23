@@ -51,8 +51,31 @@ def run_demo(image_id: str = "eval_09_h") -> None:
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     proxy = compute_noise_proxy(gray, row)
-    rule = adaptive.get_rule(proxy)
-    proposed_config = adaptive.get_config(proxy, CONFIG["proposed_default"])
+    proposed_config = adaptive.get_config(
+        proxy,
+        CONFIG["proposed_default"],
+    )
+
+    # Xác định đúng tên rule theo ngưỡng frozen trong E2.
+    t1 = float(adaptive.rules["thresholds"]["t1"])
+    t2 = float(adaptive.rules["thresholds"]["t2"])
+
+    if proxy <= t1:
+        rule_name = "low_noise"
+        frozen_rule = adaptive.rules["low_noise"]
+    elif proxy <= t2:
+        rule_name = "medium_noise"
+        frozen_rule = adaptive.rules["medium_noise"]
+    else:
+        rule_name = "high_noise"
+        frozen_rule = adaptive.rules["high_noise"]
+
+    rule = {
+        "name": rule_name,
+        "d": int(frozen_rule["d"]),
+        "sigma_color": float(frozen_rule["sigma_color"]),
+        "sigma_space": float(frozen_rule["sigma_space"]),
+    }
 
     baseline = run_baseline(image, CONFIG["baseline"])
     proposed = run_proposed(image, proposed_config)
